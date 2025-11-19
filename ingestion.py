@@ -50,7 +50,7 @@ async def index_documents_async(documents: List[Document], batch_size: int = 50)
             try:
                   await vectorestore.aadd_documents(batch)
                   log_success(
-                       f"Vectorestore Indexing: Successfully added batch {batch_num}/{len(batch)} documents)"
+                       f"Vectorestore Indexing: Successfully added batch {batch_num}/{len(batch)} ({len(batch)}documents)"
                   )
             except Exception as e:
                  log_error(f"VectoreStore Indexing: Failed to add batch {batch_num} - {e}")
@@ -89,7 +89,7 @@ async def main():
 
     res = tavily_crawl.invoke({
         "url": "https://python.langchain.com/",
-        "max_depth":2,
+        "max_depth":5,
         "extract_depth":"advanced",
     })
 

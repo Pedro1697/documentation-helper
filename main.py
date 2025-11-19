@@ -1,5 +1,9 @@
+from backend.core import run_llm
+import streamlit as st 
+
+
 def main():
-    print("Hello from documentation-assitant!")
+    st.header("Documentation helper bot")
 
 
 if __name__ == "__main__":
