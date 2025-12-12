@@ -8,7 +8,7 @@ It includes:
 - A backend module that interacts with an LLM provider (Gemini) and vector database (Pinecone)
 
 Installation and execution via uv. This project is designed to provide a simple interface for loading external documentation sources and querying them through an LLM-powered retrieval flow.
-
+![Demo](chatbot.gif)
 
 
 ## Requirements
@@ -70,6 +70,7 @@ This launches the Streamlit UI, where you can:
 
 ## Licencese 
 This project is licensed under the MIT License. See the LICENSE file for details.
+
 
 
 
